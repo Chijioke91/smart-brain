@@ -10,6 +10,11 @@ exports.getAllUsers = async (req, res, next) => {
   return res.status(200).json(users);
 };
 
+// welcome
+exports.welcome = (req, res) => {
+  res.send('Welcome');
+};
+
 // register a new user
 exports.register = async (req, res, next) => {
   try {

@@ -6,11 +6,12 @@ const {
   getUserProfile,
   getAllUsers,
   updateUserRank,
-  imageApiCall
+  imageApiCall,
+  welcome
 } = require('../controllers/user');
 
 // get all users route
-router.get('/', getAllUsers);
+router.get('/', welcome);
 
 // signin route
 router.post('/signin', signin);
